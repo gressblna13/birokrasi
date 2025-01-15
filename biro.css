@@ -1,83 +1,88 @@
-
-body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
+/* Global Font Style */
+* {
+    font-family: 'Times New Roman', Times, serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f9;
-    color: #333;
+    box-sizing: border-box;
 }
 
+/* Body Styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f8f9fa;
+}
+
+
+/* Container Styling */
 .container {
     max-width: 900px;
-    margin: 20px auto;
-    background: #fff;
-    padding: 20px;
+    background: #ffffff;
+    padding: 20px 60px; /* Atas-bawah 20px, kiri-kanan 60px */
     border-radius: 8px;
+    margin: 50px auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: justify;
 }
 
-header {
+.center-text {
     text-align: center;
-    padding-bottom: 20px;
-    border-bottom: 2px solid #ddd;
+    margin-top: 30px; /* Atur nilai ini sesuai kebutuhan */
 }
 
+
+/* Header Styling */
 header h1 {
-    font-size: 2em;
-    color: #000000;
-    margin-bottom: 10px;
+    font-size: 2.5rem;
+    color: #212529;
+    margin-bottom: 15px;
+    text-align: center;
 }
 
 header p {
     margin: 0;
-    color: #555;
+    font-size: 1rem;
+    color: #6c757d;
+    text-align: center;
 }
 
-section {
-    margin-bottom: 20px;
-}
-
+/* Section Styling */
 section h2 {
-    font-size: 1.3em;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 5px;
-    color: #2c3e50;
-}
-
-section h3 {
-    font-size: 1.1em;
-    margin-top: 15px;
-    color: #2c3e50;
+    font-size: 1.5rem; /* Title Font Size */
+    font-weight: bold; /* Title Font Weight */
+    margin-bottom: 15px; /* Space below title */
+    padding-bottom: 5px; /* Space below the border */
+    border-bottom: 2px solid #dee2e6; /* Bottom border for title */
+    color: #343a40; /* Title Font Color */
+    text-align: left; /* Left-aligned text */
 }
 
 section p {
-    margin: 10px 0;
-    text-align: justify;
+    margin-bottom: 15px; /* Space below each paragraph */
+    text-align: justify; /* Justify text */
+    text-indent: 2em; /* Indent for the first line */
 }
 
+/* Footer Styling */
 footer {
     text-align: center;
-    margin-top: 30px;
-    padding: 10px 0;
-    background: #5e565a;
-    color: #fff;
+    font-size: 0.875rem;
+    padding: 15px 0;
+    color: #6c757d;
+    background: #e9ecef;
+    border-top: 1px solid #dee2e6;
+    margin-top: 20px; /* Atur nilai ini sesuai kebutuhan */
 }
 
+/* Link Styling */
 a {
-    color: #4d626f;
+    color: #007bff;
     text-decoration: none;
 }
 
 a:hover {
     text-decoration: underline;
-}
-
-p {
-    text-indent: 2em; /* Mengatur indentasi paragraf */
-}
-p.strong {
-    color: #196077;
 }
